@@ -4,12 +4,12 @@ import ProfileViewerForm from "./ProfileViewerForm";
 
 const ProfileViewer = ({ user }) => {
   const [profile, setProfile] = useState(null);
-  const [url, setUrl] = useState();
+  const [url, setUrl] = useState('https://api.github.com/users/colt');
 
   const search = (user) => {
     setUrl(`https://api.github.com/users/${user}`);
   };
-console.log(user)
+
   useEffect(() => {
     async function loadProfile() {
       const res = await axios.get(url);
@@ -17,9 +17,7 @@ console.log(user)
     }
     loadProfile();
   }, [url]);
-
-
-
+console.log(profile)
   return (
     <div>
       <h3>Profile Viewer</h3>

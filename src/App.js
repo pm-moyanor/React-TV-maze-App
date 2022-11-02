@@ -6,12 +6,16 @@ import TvForm from './TvForm';
 import TvMovieList from './TvMovieList';
 import ProfileViewer from './ProfileViewer';
 import ProfileViewerForm from './ProfileViewerForm';
+import TimerWrapper from './TimerWrapper';
+import Timer from './Timer';
 
 function App() {
 return(
   <div>
-    <h1>TV Maze App</h1>
-    <ProfileViewer />
+    <h1>App</h1>
+   <TimerWrapper />
+
+
 
   </div>
 )
