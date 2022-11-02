@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from "react";\
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 
 const TvMovieList = () => {
+const [movie,setMovie]= useState('')
+
+
 }
 
 
